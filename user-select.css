@@ -1,0 +1,15 @@
+/*! user-select.css | @innovandrew | please steal - hot pink forever */
+
+/* --------------------------
+ * user-select / ::selection
+ **
+ * hot pink forever!
+ * !! careful - possible accessibility concerns
+ * https://github.com/h5bp/html5-boilerplate/issues/610
+ */
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; } /* firefox must be prefixed and declared separately >:/ */
+::selection {
+	background: #fe57a1;
+	color: #fff;
+	text-shadow: none;
+}
