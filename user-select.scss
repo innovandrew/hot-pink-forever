@@ -1,0 +1,24 @@
+/*! user-select.scss | @innovandrew | please steal */
+
+// !! careful - accessibility concerns
+// https://github.com/h5bp/html5-boilerplate/issues/610
+
+// in a mixin to re-use, but no variables because it is law that this must be hot pink
+@mixin user-select {
+	background: #fe57a1;
+	color: #fff;
+	text-shadow: none;
+}
+
+
+
+/* --------------------------
+ * ::selection 
+ **
+ * hot pink forever!
+ */
+ // firefox must be prefixed and declared separately >:/
+::-moz-selection { @include user-select; } /* screw you, firefox */
+::selection {
+    @include user-select;
+}
